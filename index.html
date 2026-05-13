@@ -4,6 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GMoney — Займ онлайн в Казахстане</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1409974854480299');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1409974854480299&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -89,9 +109,7 @@
     border-radius: 20px;
   }
 
-  .hero-text {
-    padding-bottom: 28px;
-  }
+  .hero-text { padding-bottom: 28px; }
 
   .hero-text h1 {
     font-family: 'Unbounded', sans-serif;
@@ -102,10 +120,7 @@
     margin-bottom: 10px;
   }
 
-  .hero-text h1 em {
-    font-style: normal;
-    color: var(--green);
-  }
+  .hero-text h1 em { font-style: normal; color: var(--green); }
 
   .hero-text p {
     font-size: 13px;
@@ -114,7 +129,6 @@
     font-weight: 300;
   }
 
-  /* FLOATING CARD */
   .float-card {
     background: var(--white);
     border-radius: 20px;
@@ -125,7 +139,6 @@
     animation: fadeUp 0.4s ease both;
   }
 
-  /* STATS */
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -149,16 +162,9 @@
     margin-bottom: 4px;
   }
 
-  .stat-box .lbl {
-    font-size: 10px;
-    color: #3a9a56;
-    font-weight: 500;
-  }
+  .stat-box .lbl { font-size: 10px; color: #3a9a56; font-weight: 500; }
 
-  /* CALC */
-  .calc-section {
-    animation: fadeUp 0.4s 0.05s ease both;
-  }
+  .calc-section { animation: fadeUp 0.4s 0.05s ease both; }
 
   .section-label {
     font-size: 11px;
@@ -179,12 +185,7 @@
   }
 
   .amount-big span { color: var(--green); font-size: 26px; }
-
-  .amount-sub {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 16px;
-  }
+  .amount-sub { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
 
   input[type=range] {
     -webkit-appearance: none;
@@ -214,21 +215,9 @@
     margin-bottom: 18px;
   }
 
-  .term-row {
-    margin-bottom: 0;
-  }
-
-  .term-title {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-
-  .term-btns {
-    display: flex;
-    gap: 8px;
-  }
+  .term-row { margin-bottom: 0; }
+  .term-title { font-size: 12px; color: var(--muted); margin-bottom: 8px; font-weight: 500; }
+  .term-btns { display: flex; gap: 8px; }
 
   .tbtn {
     flex: 1;
@@ -244,13 +233,8 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .tbtn.active {
-    background: var(--dark);
-    border-color: var(--dark);
-    color: var(--white);
-  }
+  .tbtn.active { background: var(--dark); border-color: var(--dark); color: var(--white); }
 
-  /* RESULT */
   .result-card {
     background: var(--dark);
     border-radius: 18px;
@@ -263,41 +247,15 @@
   }
 
   .result-left .rl { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
-  .result-left .rv {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 22px;
-    font-weight: 900;
-    color: var(--white);
-  }
+  .result-left .rv { font-family: 'Unbounded', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); }
   .result-left .rv span { color: var(--green); font-size: 14px; }
-
-  .result-right {
-    text-align: right;
-  }
+  .result-right { text-align: right; }
   .result-right .rl { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
-  .result-right .rv {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #4dde80;
-  }
+  .result-right .rv { font-family: 'Unbounded', sans-serif; font-size: 18px; font-weight: 700; color: #4dde80; }
 
-  /* BENEFITS */
-  .benefits-title {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 12px;
-  }
+  .benefits-title { font-family: 'Unbounded', sans-serif; font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 12px; }
 
-  .blist {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 16px;
-    animation: fadeUp 0.4s 0.15s ease both;
-  }
+  .blist { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; animation: fadeUp 0.4s 0.15s ease both; }
 
   .bitem {
     display: flex;
@@ -310,55 +268,17 @@
     transition: transform 0.15s, box-shadow 0.15s;
   }
 
-  .bitem:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-  }
+  .bitem:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
 
-  .bicon {
-    width: 38px; height: 38px;
-    background: var(--green-light);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-  }
+  .bicon { width: 38px; height: 38px; background: var(--green-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 
-  .binfo strong {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 2px;
-  }
+  .binfo strong { display: block; font-size: 13px; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
+  .binfo span { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
-  .binfo span {
-    font-size: 11px;
-    color: var(--muted);
-    line-height: 1.4;
-  }
+  .how-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 20px; margin-bottom: 16px; animation: fadeUp 0.4s 0.2s ease both; }
 
-  /* HOW TO */
-  .how-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 16px;
-    animation: fadeUp 0.4s 0.2s ease both;
-  }
-
-  .step-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .sitem {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-  }
+  .step-list { display: flex; flex-direction: column; gap: 14px; }
+  .sitem { display: flex; gap: 14px; align-items: flex-start; }
 
   .snum {
     width: 30px; height: 30px;
@@ -373,24 +293,10 @@
     margin-top: 2px;
   }
 
-  .stxt strong {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 2px;
-  }
+  .stxt strong { display: block; font-size: 13px; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
+  .stxt span { font-size: 12px; color: var(--muted); }
 
-  .stxt span {
-    font-size: 12px;
-    color: var(--muted);
-  }
-
-  /* CTA */
-  .cta-wrap {
-    animation: fadeUp 0.4s 0.25s ease both;
-    margin-bottom: 16px;
-  }
+  .cta-wrap { animation: fadeUp 0.4s 0.25s ease both; margin-bottom: 16px; }
 
   .cta {
     display: block;
@@ -413,51 +319,20 @@
     letter-spacing: 0.2px;
   }
 
-  .cta::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
-  }
+  .cta::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%); }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,179,65,0.45); }
 
-  .cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(0,179,65,0.45);
-  }
-
-  .trust-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-    font-size: 11px;
-    color: var(--muted);
-  }
-
+  .trust-row { display: flex; justify-content: center; gap: 20px; margin-top: 10px; font-size: 11px; color: var(--muted); }
   .trust-row span { display: flex; align-items: center; gap: 4px; }
 
-  /* DISCLAIMER */
-  .disc {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px;
-    font-size: 10.5px;
-    color: var(--muted);
-    line-height: 1.7;
-    animation: fadeUp 0.4s 0.3s ease both;
-  }
+  .disc { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 14px; font-size: 10.5px; color: var(--muted); line-height: 1.7; animation: fadeUp 0.4s 0.3s ease both; }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- HEADER -->
   <div class="header">
     <div class="header-inner">
       <div class="nav">
@@ -471,29 +346,17 @@
     </div>
   </div>
 
-  <!-- STATS -->
   <div class="stats-grid">
-    <div class="stat-box">
-      <div class="num">0,01%</div>
-      <div class="lbl">Ставка/день</div>
-    </div>
-    <div class="stat-box">
-      <div class="num">5 мин</div>
-      <div class="lbl">Решение</div>
-    </div>
-    <div class="stat-box">
-      <div class="num">30 дн</div>
-      <div class="lbl">Максимум</div>
-    </div>
+    <div class="stat-box"><div class="num">0,01%</div><div class="lbl">Ставка/день</div></div>
+    <div class="stat-box"><div class="num">5 мин</div><div class="lbl">Решение</div></div>
+    <div class="stat-box"><div class="num">30 дн</div><div class="lbl">Максимум</div></div>
   </div>
 
-  <!-- CALCULATOR -->
   <div class="float-card calc-section">
     <div class="section-label">Калькулятор займа</div>
     <div class="amount-big" id="amtDisplay">50 000 <span>₸</span></div>
     <div class="amount-sub">от 10 000 до 145 000 тенге</div>
-    <input type="range" id="amtSlider" min="10000" max="145000" step="5000" value="50000"
-      oninput="doCalc()">
+    <input type="range" id="amtSlider" min="10000" max="145000" step="5000" value="50000" oninput="doCalc()">
     <div class="range-limits"><span>10 000 ₸</span><span>145 000 ₸</span></div>
     <div class="term-row">
       <div class="term-title">Срок займа</div>
@@ -506,7 +369,6 @@
     </div>
   </div>
 
-  <!-- RESULT -->
   <div class="result-card">
     <div class="result-left">
       <div class="rl">К возврату</div>
@@ -518,78 +380,29 @@
     </div>
   </div>
 
-  <!-- BENEFITS -->
   <div class="benefits-title">Почему выбирают GMoney</div>
   <div class="blist">
-    <div class="bitem">
-      <div class="bicon">⚡</div>
-      <div class="binfo">
-        <strong>Мгновенное решение</strong>
-        <span>95% заявок одобряются автоматически за 5 минут</span>
-      </div>
-    </div>
-    <div class="bitem">
-      <div class="bicon">💳</div>
-      <div class="binfo">
-        <strong>На карту или счёт банка</strong>
-        <span>Kaspi, Halyk, Forte, BCC и любой другой банк КЗ</span>
-      </div>
-    </div>
-    <div class="bitem">
-      <div class="bicon">🪪</div>
-      <div class="binfo">
-        <strong>Только удостоверение личности</strong>
-        <span>Без справок о доходах и поручителей</span>
-      </div>
-    </div>
-    <div class="bitem">
-      <div class="bicon">🔄</div>
-      <div class="binfo">
-        <strong>Пролонгация займа</strong>
-        <span>Возможность продлить срок при необходимости</span>
-      </div>
-    </div>
-    <div class="bitem">
-      <div class="bicon">🌙</div>
-      <div class="binfo">
-        <strong>Круглосуточно 24/7</strong>
-        <span>Заявки принимаются в любое время, без выходных</span>
-      </div>
-    </div>
+    <div class="bitem"><div class="bicon">⚡</div><div class="binfo"><strong>Мгновенное решение</strong><span>95% заявок одобряются автоматически за 5 минут</span></div></div>
+    <div class="bitem"><div class="bicon">💳</div><div class="binfo"><strong>На карту или счёт банка</strong><span>Kaspi, Halyk, Forte, BCC и любой другой банк КЗ</span></div></div>
+    <div class="bitem"><div class="bicon">🪪</div><div class="binfo"><strong>Только удостоверение личности</strong><span>Без справок о доходах и поручителей</span></div></div>
+    <div class="bitem"><div class="bicon">🔄</div><div class="binfo"><strong>Пролонгация займа</strong><span>Возможность продлить срок при необходимости</span></div></div>
+    <div class="bitem"><div class="bicon">🌙</div><div class="binfo"><strong>Круглосуточно 24/7</strong><span>Заявки принимаются в любое время, без выходных</span></div></div>
   </div>
 
-  <!-- HOW IT WORKS -->
   <div class="how-card">
     <div class="section-label" style="margin-bottom:16px">Как получить деньги</div>
     <div class="step-list">
-      <div class="sitem">
-        <div class="snum">1</div>
-        <div class="stxt">
-          <strong>Заполните онлайн-заявку</strong>
-          <span>Укажите сумму, срок и личные данные — 3 минуты</span>
-        </div>
-      </div>
-      <div class="sitem">
-        <div class="snum">2</div>
-        <div class="stxt">
-          <strong>Получите решение</strong>
-          <span>Автоматическая проверка — ответ за 5 минут</span>
-        </div>
-      </div>
-      <div class="sitem">
-        <div class="snum">3</div>
-        <div class="stxt">
-          <strong>Деньги на карту</strong>
-          <span>Перевод сразу после одобрения заявки</span>
-        </div>
-      </div>
+      <div class="sitem"><div class="snum">1</div><div class="stxt"><strong>Заполните онлайн-заявку</strong><span>Укажите сумму, срок и личные данные — 3 минуты</span></div></div>
+      <div class="sitem"><div class="snum">2</div><div class="stxt"><strong>Получите решение</strong><span>Автоматическая проверка — ответ за 5 минут</span></div></div>
+      <div class="sitem"><div class="snum">3</div><div class="stxt"><strong>Деньги на карту</strong><span>Перевод сразу после одобрения заявки</span></div></div>
     </div>
   </div>
 
-  <!-- CTA -->
   <div class="cta-wrap">
-    <a href="https://pxl.leads.su/click/35234179a6a0a14f1629d86d3d0fa1ff?erid=get_it_soon" class="cta">
-      Получить деньги → 
+    <a href="https://pxl.leads.su/click/35234179a6a0a14f1629d86d3d0fa1ff?erid=get_it_soon"
+       class="cta"
+       onclick="fbq('track', 'Lead')">
+      Получить деньги →
     </a>
     <div class="trust-row">
       <span>🔒 Безопасно</span>
@@ -598,7 +411,6 @@
     </div>
   </div>
 
-  <!-- DISCLAIMER -->
   <div class="disc">
     Займы предоставляются гражданам Республики Казахстан от 21 года. Сумма займа: от 10 000 до 145 000 тенге. Срок: до 30 дней. Процентная ставка для новых клиентов от 0,01% в день, для повторных клиентов до 1,9% в день. Решение принимается индивидуально. GMoney — лицензированная МФО Республики Казахстан. Погашение: банковской картой, через QIWI-терминалы, Касса24 или банковским переводом.
   </div>
@@ -620,10 +432,8 @@
     const pct = (val - 10000) / (145000 - 10000) * 100;
     document.getElementById('amtSlider').style.background =
       `linear-gradient(to right, #00b341 ${pct}%, #e2e8f5 ${pct}%)`;
-
     document.getElementById('amtDisplay').innerHTML =
       val.toLocaleString('ru-RU') + ' <span>₸</span>';
-
     const interest = Math.round(val * 0.0001 * term);
     const total = val + interest;
     document.getElementById('retDisplay').innerHTML =
